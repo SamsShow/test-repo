@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        select {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <form action="">
+        <h1>Enter your Details here</h1>
+
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name"   /><br /><br />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="tshirt-size">T-shirt Size:</label>
+      <select id="tshirt-size" name="tshirt-size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="xl">XL</option></select
+      ><br /><br />
+
+      
+
+      <label for="fav-color">Favourite Colour:</label>
+      <input type="color" id="fav-color" name="fav-color" /><br /><br />
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script src="./form.js"></script>
+  </body>
+</html>
