@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <Card />
+      <Card name="Saksham Tyagi" roll="2200320230041" pic={reactLogo}/>
+      <Card name="Saksham Tyagi" roll="2200320230041" pic={viteLogo}/>
     </>
   )
 }
