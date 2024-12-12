@@ -1,29 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Card from './components/Card'
-import Child from "./components/Child"
-import State1 from './components/State1'
+import Map from './components/Map'
+import movies from './components/movies'
 
 function App() {
-
-  // const user = {
-  //   name:"AJ",
-  //   id: 27,
-  //   hobbies: ["Reading"],
-  //   ismem: true,
-  // }
-
   return (
-    <>
-    <State1 />
-    {/* <Child user={user}></Child>
-      <Card name="Saksham Tyagi" roll="2200320230041" pic={reactLogo}/>
-      <Card name="Saksham Tyagi" roll="2200320230041" pic={viteLogo}/> */}
-
-
-    </>
+    <div className="store">
+      <header className="header">
+        <h1>Movie Store</h1>
+      </header>
+      <div className="grid">
+        {movies.map((movie) => (
+          <Map 
+            key={movie.id} 
+            image={movie.image} 
+            title={movie.title} 
+            language={movie.language} 
+            cost={movie.cost} 
+          />
+        ))}
+      </div>
+    </div>
   )
 }
 
